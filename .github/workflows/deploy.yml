@@ -8,6 +8,13 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Debug info
+        run: |
+          echo "Node version:"
+          node -v
+          echo "NPM version:"
+          npm -v
+
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
 
